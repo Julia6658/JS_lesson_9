@@ -8,7 +8,7 @@ class Worker {
         this.days = days;
     }     
     getSalary () {
-       console.log(this.rate * this.days);
+       return this.rate * this.days;
     }
 }
 let worker1 = new Worker('John', 'Malkovich', 50, 21);
