@@ -12,23 +12,23 @@ ninja - здесь Функция bike(); вызвана в глобальноо
 pomidor - Здесь уже вызывается как метод объекта obj1 и this.name ссылается на свойство объекта obj1<br>
 site - Здесь уже вызывается как метод объекта obj2 и this.name ссылается на свойство объекта obj2<br>
 5) Статические свойства и методы определяются для всего класса в целом, а не для отдельного объекта. Для их определения перед названием метода ставится оператор static. В отличие от обычных нестатических методов статические методы определяют поведение для всего класса.<br><br>
-6) const student = {
+6) const student = {<br>
 
-    firstName: 'Маша',
-    get getName() {
-        return this.firstName;
-    },
-    set changeName(newName) {
-        this.firstName = newName;
-    } 
-};
+    firstName: 'Маша',<br>
+    get getName() {<br>
+        return this.firstName;<br>
+    },<br>
+    set changeName(newName) {<br>
+        this.firstName = newName;<br>
+    } <br>
+};<br>
 
-console.log(student.getName); 
-student.changeName = "Сара";
 console.log(student.getName); <br>
+student.changeName = "Сара";<br>
+console.log(student.getName); <br><br>
 
 
-7) Потому что тип значения, записанного в переменную member, это объект<br>
+7) Потому что тип значения, записанного в переменную member, - это объект<br>
 8) Выведется {name: 'Valera', age: 23} Без свойства city, так как ему не было присвоено значение, а было переопределено значение переменной city.<br>
 
 
